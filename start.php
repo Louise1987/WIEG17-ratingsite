@@ -7,6 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Movie</title>
+
+    <?php
+include "./header.php";
+?>
+ 
 </head>
 <body>
 
@@ -20,10 +25,7 @@
 
 
 
-    
-
     <?php
-    
 
 $movies = array ("1.Gladiator", 
 "5.The Note Book",
@@ -31,13 +33,21 @@ $movies = array ("1.Gladiator",
 "2.War Horse",
 "4.Brave heart");
 
+$points = array ("1", "2", "3", "4", "5");
+
+print_r($movies);
+
 include "./function.php";
+
+include "./filminfo.php";
+
+include "./kontakt.php";
 
 rensa ($movies);
 
 createLinks ($listItem);
 
-$points = array ("1", "2", "3", "4", "5");
+
 
 
 sepoints ($points);
