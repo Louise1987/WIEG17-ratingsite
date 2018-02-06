@@ -1,5 +1,5 @@
 
-<?php
+ <?php
 function rensa($listToEcho){
    rsort($listToEcho);
    echo "<ul>";
@@ -25,7 +25,6 @@ function createLinks($movies){
  print_r($poäng);
 
 }
-
 
 
 
