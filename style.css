@@ -1,0 +1,18 @@
+
+h1, p{
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    color: blue;
+}
+
+li{
+    border-style: groove;
+    font-family: 'Anton', sans-serif;
+    color: Grey;
+    width: 200px;
+    font-size: 30px;
+}
+
+a{
+
+}
