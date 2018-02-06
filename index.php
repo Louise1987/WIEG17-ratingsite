@@ -1,4 +1,8 @@
+
 <!DOCTYPE html>
+<?php
+include "data.php";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,24 +10,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Anton|Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Movie</title>
+    <title><?php 
+    
+    echo  SITE_NAME;
+    
+    if (isset($pageTitel)){
+        echo " - ".$pageTitle;
+    }
+    
+        include "./header.php";
+    ?></title>
 
-    <?php
-include "./header.php";
-?>
+   
+
+
  
 </head>
 <body>
 
 <div="start">
-<button><a href="./start.php">Start</a></button>
-<button><a href="./fimlinfo.php">Info</a></button>
+<button><a href="./index.php">Start</a></button>
+<button><a href="./filminfo.php">Info</a></button>
 <button><a href="./kontakt.php">Kontakt</a></button>
 </div>
 
 <h1>Här är lista på mina favorit filmer</h1>
-
-
 
     <?php
 
@@ -41,20 +52,15 @@ include "./function.php";
 
 include "./filminfo.php";
 
-include "./kontakt.php";
+// include "./kontakt.php";
 
 rensa ($movies);
 
 createLinks ($listItem);
 
-
-
-
 sepoints ($points);
 
-
-
-    ?>
+?>
     <p>Poäng på Film<p> 
     <select id="Movie" name="nr">
         <option value="0">Select</option>

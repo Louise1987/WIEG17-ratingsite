@@ -1,4 +1,5 @@
 <?php
+$pageTitle = "Kontakt";
 include "./header.php";
 ?>
 
